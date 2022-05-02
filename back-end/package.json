@@ -1,0 +1,24 @@
+{
+  "name": "pesquisar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "knex": "^1.0.3",
+    "leaflet": "^1.7.1",
+    "nodemon": "^2.0.15",
+    "nominatim-client": "^3.2.1",
+    "nominatim-geocode": "^1.1.0",
+    "nominatim-geocoder": "^0.1.4",
+    "pg": "^8.7.3"
+  }
+}

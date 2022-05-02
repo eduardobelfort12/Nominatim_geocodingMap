@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Free-Map</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="crossorigin=""
+      />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="crossorigin=""></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/api.js"></script>
+  </head>
+  <body>
+
+    <div>
+      <form>
+        <input id="input" name="input" type="text">
+        <button style="width: auto; position: absolute; margin: 5px;"
+          type="button"
+          id="search"><i class="fa
+            fa-search"></i></button>
+      </form>
+    </div>
+
+    <div id="btnOpen">
+      <button type="button" class="button-open" onclick="Open()"><i class="fa
+          fa-bars"></i></button>
+    </div>
+
+    <div id="my-side-nav" class="sidenav">
+      <button class="btnClose" onclick="Close()"><i class="fa fa-window-close"></i></button>
+      <table id="result-list"></table>
+      <button type='button' id='btn' onclick='saveCoordinates()'>Salvar dados</button>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+    <script src="js/map.js"></script>
+    <script src="js/effects.js"></script>
+  </body>
+</html>

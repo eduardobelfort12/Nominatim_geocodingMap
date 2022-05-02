@@ -1,0 +1,21 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "leaflet": "^1.7.1",
+    "leaflet-geosearch": "^3.6.0",
+    "leaflet-search": "^3.0.2",
+    "nodemon": "^2.0.15",
+    "nominatim-geocoder": "^0.1.4"
+  }
+}
